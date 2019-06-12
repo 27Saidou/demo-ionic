@@ -1,3 +1,4 @@
+import { AppareilsPage } from './../pages/appareils/appareils';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -6,11 +7,15 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { SingleAppareilPage} from '../pages/appareils/single-appareil/single-appareil';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    SingleAppareilPage,
+    AppareilsPage
+   
   ],
   imports: [
     BrowserModule,
@@ -19,7 +24,10 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    AppareilsPage,
+    SingleAppareilPage
+
   ],
   providers: [
     StatusBar,
